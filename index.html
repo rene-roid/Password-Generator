@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <!-- <header>
+        <h1>Password Generator</h1>
+    </header> -->
+
+    <body>
+        <div class="container">
+            <div class="password">
+                <h2>Password Generator</h2>
+                <p id="password"></p>
+            </div>
+            <div class="settings">
+                <h2>Settings</h2>
+                <div class="settings__length">
+                    <label for="length">Length</label>
+                    <input type="number" id="length" value="16">
+                </div>
+                <div class="settings__uppercase">
+                    <label for="uppercase">Uppercase</label>
+                    <input type="checkbox" id="uppercase" checked>
+                </div>
+                <!-- <div class="settings__lowercase">
+                    <label for="lowercase">Lowercase</label>
+                    <input type="checkbox" id="lowercase" checked>
+                </div> -->
+                <div class="settings__numbers">
+                    <label for="numbers">Numbers</label>
+                    <input type="checkbox" id="numbers" checked>
+                </div>
+                <div class="settings__symbols">
+                    <label for="symbols">Symbols</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+                <br>
+                <div class="generate">
+                    <button id="generate" onclick="generatePassword()">Generate</button>
+                </div>
+            </div>
+            <div class="result">
+                <h2>Result</h2>
+                <div class="res">
+                    <input type="text" class="pass_result" id="pass_result">
+                    <button id="copy" onclick="copyPassword()">Copy</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
