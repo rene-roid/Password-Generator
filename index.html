@@ -19,7 +19,12 @@
                 <p id="password"></p>
             </div>
             <div class="settings">
-                <h2>Settings</h2>
+                <div class="settings-title">
+                    <h2>Settings</h2>
+                    <div class="to_right">
+                        <input class="save_settings" id="save_settings_checkbox" type="checkbox" checked onclick="save_settings_button()">Save Settings</input>
+                    </div>
+                </div>
                 <div class="settings__length">
                     <label for="length">Length</label>
                     <input type="number" id="length" value="16">

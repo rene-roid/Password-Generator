@@ -46,6 +46,23 @@ body {
     justify-content: center;
 }
 
+.settings-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-title h2 {
+    font-size: 1.5rem;
+    width: 30%;
+}
+
+.settings-title .to_right {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 .result {
     width: 100%;
     max-width: 400px;
