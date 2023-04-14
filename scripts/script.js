@@ -71,6 +71,17 @@ let generatePassword = () => {
     for (let i = 0; i < length.value; i++) {
         password += final_string[Math.floor(Math.random() * final_string.length)];
     }
+
+    if (includeUppercase.checked) {
+        password = password.replace(uppercase.charAt(Math.floor(Math.random() * uppercase.length)), password.charAt(Math.floor(Math.random() * password.length)).toUpperCase());
+    }
+    if (includeNumbers.checked) {
+        password = password.replace(numbers.charAt(Math.floor(Math.random() * numbers.length)), Math.floor(Math.random() * 10));
+    }
+    if (includeSymbols.checked) {
+        password = password.replace(symbols.charAt(Math.floor(Math.random() * symbols.length)), symbols.charAt(Math.floor(Math.random() * symbols.length)));
+    }
+
     input_result.value = password;
     save_to_localstorage();
 }
